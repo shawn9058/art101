@@ -1,0 +1,20 @@
+h1 {
+  color: rgb(231, 242, 246);
+  font-size: 200%;
+}
+
+p {
+  font-family: "arial";
+  text-indent: 0px;
+  margin-left: 0px;
+}
+
+#content {
+  background-color: #8b89d5;
+  width: 1460px;
+  min-height: 700px;
+  padding: 10px;
+  margin: 60px;
+  border: solid 6px #f6fafc;
+  font-size: 20px;
+}
