@@ -1,18 +1,18 @@
 // Author:  Seokho Kang
-// Date: 05.15.2023
+// Date: 05.17.2023
 
-var button = document.getElementById("my-button");
+$('#challenges').append("<button id=buttonOne>This is a button!</button>");
+$('#problems').append("<button id=buttonTwo>This is another button!</button>");
+$('#results').append("<button id=buttonThree>Wow, a button!</button>");
 
-//get name fromt the input
-button.addEventListener('click', function() {
-    inputValue = document.getElementById("user-name").value;
-    nameSort(inputValue);
+$("#buttonOne").click(function(){
+  $("#challenges").toggleClass("special");
 });
 
-//Sorts a name
-function nameSort(name) {
-    //splits string, sorts it, then joins it back together
-    var nameSorted = name.split("").sort().join("");
-    var newDiv = document.getElementById("output");
-    newDiv.innerHTML = nameSorted;
-}
+$("#buttonTwo").click(function(){
+  $("#problems").toggleClass("special");
+});
+
+$("#buttonThree").click(function(){
+  $("#results").toggleClass("special");
+});
